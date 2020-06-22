@@ -22,7 +22,7 @@
 //------------------------------------------------------------------------
 
 #import <UIKit/UIKit.h>
-
+#import <WebKit/WebKit.h>
 @class ZBarHelpController;
 
 @protocol ZBarHelpDelegate
@@ -41,7 +41,7 @@
 {
     NSString *reason;
     id delegate;
-    UIWebView *webView;
+    WKWebView *webView;
     UIToolbar *toolbar;
     UIBarButtonItem *doneBtn, *backBtn, *space;
     NSURL *linkURL;
